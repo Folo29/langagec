@@ -15,5 +15,19 @@ void ft_putstr(char *str)
 		ft_putchar(str[i]);
 		i++;
 	}
+}
 
+int main(int argc, char **argv)
+{
+	int i;
+
+	i = 1;
+	while (argv[i])
+	{
+		ft_putstr(argv[i]);
+		ft_putchar(' ');
+		i++;
+	}
+	ft_putchar('\n');
+	return 0;
 }
